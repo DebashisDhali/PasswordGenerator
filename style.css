@@ -1,0 +1,118 @@
+:root{
+    --primary:#666;
+    --primary2:rgb(200, 143, 85);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 62.5%;
+}
+.container{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+}
+.app-box{
+    height: 45%;
+    width:30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--primary2);
+    gap:1.5rem;
+}
+h1{
+    padding-top: .5rem;
+}
+.password{
+    height:3.5rem;
+    width:fit-content;
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background:linear-gradient(white,rgb(189, 139, 23));
+    /* text-align: center; */
+    cursor:copy;
+}
+
+ input[type="range"]{
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: .5rem;
+    outline: none;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height:1.5rem;
+    width:1rem;
+    background-color: red;
+   
+}
+
+input[type="checkbox"]{
+accent-color: red;
+}
+
+.rangeslider p{
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.box1,.box2,.box3{
+    display: flex;
+    justify-content: space-between;
+    gap:50%;
+}
+.box1 label,.box2 label,.box3 label{
+    font-size: 1.5rem;
+}
+
+button{
+    width:100%;
+    height: 4.5rem;
+    padding: .1rem;
+    margin-bottom: -2rem;
+    background-color:rgb(210, 178, 146) ;
+    border: none;
+    color:#494646;
+    font-size: 1.7rem;
+}
+
+#uppercase{
+    background-color: red;
+}
+button:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+button:active{
+    background-color: white;
+    color:black;
+}
+
+.checkboxs{
+    width:80%;
+}
+
